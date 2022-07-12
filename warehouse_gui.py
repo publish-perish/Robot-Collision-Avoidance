@@ -178,6 +178,7 @@ def log(df):
      count=count+1
      dict={}
      for i in df.index:
+        flag=0
         i.f=0
         for j in df.index:
             if j!=i and df.loc[i,'decision']!='X':
